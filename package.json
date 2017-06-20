@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-amqp2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Package that connects directly to an amqp2 server",
   "repository": {
     "type": "git",
