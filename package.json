@@ -1,0 +1,58 @@
+{
+  "name": "node-red-contrib-amqp2",
+  "version": "0.1.0",
+  "description": "Package that connects directly to an amqp2 server",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sciensa/node-red-contrib-amqp2.git"
+  },
+  "scripts": {
+    "test:unit": "mocha --opts test/unit/mocha.opts test/",
+    "postinstall": "npm --prefix ./node_modules/node-red install ./node_modules/node-red"
+  },
+  "keywords": [
+    "node-red",
+    "amqp2",
+    "rabbitmq",
+    "amqp2-ts"
+  ],
+  "node-red": {
+    "version": ">=0.11.0",
+    "nodes": {
+      "amqp2": "lib/amqp2.js"
+    }
+  },
+  "author": "Sciensa Consulting <sciensa@sciensa.com.br> (http://github.com/sciensa)",
+  "contributors": [
+    "Aline Castro <aline.castro@sciensa.com> (http://github.com/alinecastro33)",
+    "Gabriel Carmelo Noguchi <gabriel.noguchi@sciensa.com> (http://github.com/gnoguchi)",
+    "Ian Nagano <ian.nagano@sciensa.com> (http://github.com/ianngn)",
+    "Rogério R. Alcântara <rogerio.alcantara@sciensa.com> (http://github.com/roalcantara)",
+    "Valter Junior <valter.junior@sciensa.com> (http://github.com/valterjnr)",
+    "Daniele Melo <daniele.melo@sciensa.com> (http://github.com/eleinadinha)",
+    "Lucas Machado <lucas.machado@sciensa.com> (http://github.com/machad0)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sciensa/node-red-contrib-amqp2/issues"
+  },
+  "homepage": "https://github.com/sciensa/node-red-contrib-amqp2#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-add-src": "^0.2.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-spawn-mocha": "^2.2.2",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typescript": "^2.13.4",
+    "merge2": "^1.0.2",
+    "source-map-support": "^0.4.0",
+    "tslint": "^3.10.2",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "amqp-ts": "^1.0.0"
+  }
+}
